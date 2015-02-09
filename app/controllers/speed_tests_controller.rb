@@ -1,4 +1,5 @@
 class SpeedTestsController < ApplicationController
+  protect_from_forgery except: :create
   before_action :set_speed_test, only: [:show, :edit, :update, :destroy]
 
   # GET /speed_tests
