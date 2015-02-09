@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Speed Tests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Datetime</th>
+      <th>Ping</th>
+      <th>Download</th>
+      <th>Upload</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @speed_tests.each do |speed_test| %>
+      <tr>
+        <td><%= speed_test.datetime %></td>
+        <td><%= speed_test.ping %></td>
+        <td><%= speed_test.download %></td>
+        <td><%= speed_test.upload %></td>
+        <td><%= link_to 'Show', speed_test %></td>
+        <td><%= link_to 'Edit', edit_speed_test_path(speed_test) %></td>
+        <td><%= link_to 'Destroy', speed_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Speed test', new_speed_test_path %>

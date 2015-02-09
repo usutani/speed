@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  datetime: 2015-02-09 20:12:09
+  ping: 1.5
+  download: 1.5
+  upload: 1.5
+
+two:
+  datetime: 2015-02-09 20:12:09
+  ping: 1.5
+  download: 1.5
+  upload: 1.5
